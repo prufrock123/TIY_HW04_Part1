@@ -16,6 +16,25 @@
 	background-color: #5BA3D6;
 }
 
+form {
+	width: 100%;
+	height: 100%;
+}
+
+.form-content {
+	height: 100%;
+	padding: 15px 30px;
+}
+
+input, textarea, select, button {
+	width: 80%;
+	margin: 0;
+}
+
+label {
+	display: block;
+}
+
 @media all and (min-width: 900px){
 
 	#container {
@@ -26,16 +45,25 @@
 	}
 
 	#container > * {
-		font-size: normal;
+		font-size: initial;
 	}
 
 	.column {
 		display: inline-block;
 		box-sizing: content-box;
 		background-color: inherit;
-		width: calc(100%/3);
+		width: 33%;
 		height: 100%;
+		vertical-align: top;
+		/*padding: 15px 30px;*/
 	}
+
+	.form-content > div {
+
+	}
+
+
+
 
 /*	.column:nth-child(2) {
 		background-color: inherit;
